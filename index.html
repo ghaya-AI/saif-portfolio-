@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saif Nbet — Mobile Engineer</title>
+  <meta name="description" content="Saif Nbet is a Mobile Engineer with 2+ years of experience building cross-platform apps with Flutter/Dart. 5 apps shipped to Play Store, App Store, and AppGallery." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Saif Nbet — Mobile Engineer" />
+  <meta property="og:description" content="Building cross-platform mobile experiences — 5 apps shipped to production." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Saif Nbet — Mobile Engineer" />
+  <meta name="twitter:description" content="Building cross-platform mobile experiences — 5 apps shipped to production." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ========== GLOBAL PARTICLE BACKGROUND ========== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ========== PRELOADER ========== -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">SN</div>
+      <div class="preloader-bar"><div class="preloader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- ========== CUSTOM CURSOR ========== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">SN<span class="dot">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero" class="hero">
+    <!-- Particle canvas (moved to global background) -->
+
+    <!-- Gradient orbs -->
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">Welcome to my portfolio</p>
+      <div class="hero-photo reveal-up">
+        <div class="hero-photo-ring">
+          <img src="images/saif.jpg.png" alt="Saif Nbet" />
+        </div>
+        <span class="hero-photo-status"></span>
+      </div>
+      <div class="hero-title reveal-up">
+        <span class="static-prefix">I'm a </span>
+        <span class="typing-wrapper">
+          <span id="typing-text" class="typing-text"></span>
+          <span class="typing-cursor">|</span>
+        </span>
+      </div>
+      <p class="hero-tagline reveal-up">
+        Building cross-platform mobile experiences —<br />
+        <strong>5 apps shipped to production</strong>
+      </p>
+      <div class="hero-cta reveal-up">
+        <a href="#projects" class="btn btn-primary">
+          <span>View Projects</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="cv-saif-nbet.pdf" download="Saif-Nbet-CV.pdf" class="btn btn-outline">
+          <i class="fas fa-download"></i>
+          <span>Download CV</span>
+        </a>
+      </div>
+      <div class="hero-socials reveal-up">
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" class="social-link">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:nbetsaif@gmail.com" aria-label="Email" class="social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">01. About me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text scroll-reveal">
+          <p class="about-lead">
+            Mobile Engineer passionate about building seamless cross-platform experiences that people actually enjoy using.
+          </p>
+          <p>
+            With around <strong>2 years of professional experience</strong> in mobile development, I've built and shipped applications across <strong>Play Store</strong>, <strong>App Store</strong>, and <strong>AppGallery</strong> — 5 apps in total, serving real users in real markets.
+          </p>
+          <p>
+            My focus is Flutter and Dart, where I thrive at turning complex requirements into clean, maintainable code. I care about architecture, state management patterns, and creating apps that feel fast and reliable.
+          </p>
+          <p>
+            I hold a Software Engineering degree from <strong>INSAT</strong> (Institut National des Sciences Appliquées et de Technologie), Tunis, Tunisia — an intensive 5-year program grounding me in strong CS fundamentals.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card scroll-reveal">
+              <span class="stat-number" data-count="5">0</span>
+              <span class="stat-label">Apps Shipped</span>
+            </div>
+            <div class="stat-card scroll-reveal">
+              <span class="stat-number" data-count="3">0</span>
+              <span class="stat-label">App Stores</span>
+            </div>
+            <div class="stat-card scroll-reveal">
+              <span class="stat-number" data-count="2">0</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual scroll-reveal">
+          <div class="about-card-wrapper">
+            <div class="about-card glass-card">
+              <div class="about-card-header">
+                <div class="about-avatar">
+                  <img src="images/saif.jpg.png" alt="Saif Nbet" />
+                </div>
+                <div>
+                  <div class="about-card-name">Saif Nbet</div>
+                  <div class="about-card-role">Mobile Engineer</div>
+                </div>
+              </div>
+              <div class="about-card-tags">
+                <span class="tag">Flutter</span>
+                <span class="tag">Dart</span>
+                <span class="tag">BLoC</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Cross-Platform</span>
+              </div>
+              <div class="about-card-info">
+                <div class="info-row">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Tunis, Tunisia</span>
+                </div>
+                <div class="info-row">
+                  <i class="fas fa-envelope"></i>
+                  <span>nbetsaif@gmail.com</span>
+                </div>
+                <div class="info-row">
+                  <i class="fas fa-phone"></i>
+                  <span>+216 25 250 161</span>
+                </div>
+              </div>
+              <div class="about-card-status">
+                <span class="status-dot"></span>
+                Available for opportunities
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">02. Experience</span>
+        <h2 class="section-title">Work History</h2>
+      </div>
+      <div class="timeline">
+
+        <!-- Job 1 -->
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Mobile Engineer</h3>
+                <div class="timeline-company">
+                  <a href="https://avidea.tn" target="_blank" rel="noopener" class="company-name">Avidea</a>
+                  <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Tunis, Tunisia</span>
+                </div>
+              </div>
+              <div class="timeline-period">
+                <span class="period-badge">Nov 2024 – Present</span>
+                <span class="timeline-type">Full-time</span>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Improved existing Avidea applications and developed mobile solutions for external clients. Led development of three key projects:
+            </p>
+            <div class="timeline-app-links">
+  <div class="app-link-group">
+    <span class="app-link-label">DigiExpert</span>
+    <a href="https://play.google.com/store/apps/details?id=com.avidea.digiconstat.digiexpert" target="_blank" rel="noopener"><i class="fab fa-google-play"></i></a>
+    <a href="https://apps.apple.com/tn/app/digiexpert/id6478974598" target="_blank" rel="noopener"><i class="fab fa-apple"></i></a>
+    <a href="https://appgallery.huawei.com/app/C104091313" target="_blank" rel="noopener"><i class="fas fa-mobile-alt"></i></a>
+  </div>
+  <div class="app-link-group">
+    <span class="app-link-label">DigiConstat</span>
+    <a href="https://play.google.com/store/apps/details?id=com.avidea.digitconstat" target="_blank" rel="noopener"><i class="fab fa-google-play"></i></a>
+    <a href="https://apps.apple.com/tn/app/digiconstat/id1662349577" target="_blank" rel="noopener"><i class="fab fa-apple"></i></a>
+    <a href="https://appgallery.huawei.com/app/C104091177" target="_blank" rel="noopener"><i class="fas fa-mobile-alt"></i></a>
+  </div>
+  <div class="app-link-group">
+    <span class="app-link-label">E-Constat FTUSA</span>
+    <a href="https://play.google.com/store/apps/details?id=com.ftusa.econstat" target="_blank" rel="noopener"><i class="fab fa-google-play"></i></a>
+    <a href="https://apps.apple.com/tn/app/e-constat-ftusa/id6748530907" target="_blank" rel="noopener"><i class="fab fa-apple"></i></a>
+    <a href="https://appgallery.huawei.com/app/C114932331" target="_blank" rel="noopener"><i class="fas fa-mobile-alt"></i></a>
+  </div>
+</div>
+            <div class="timeline-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Cubit</span>
+              <span class="tech-tag">BLoC</span>
+              <span class="tech-tag">Provider</span>
+              <span class="tech-tag">MVVM</span>
+              <span class="tech-tag">Jenkins</span>
+              <span class="tech-tag">Jira</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Mobile Engineer</h3>
+                <div class="timeline-company">
+                  <a href="https://www.think-it.io/" target="_blank" rel="noopener" class="company-name">Think-it</a>
+                  <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Tunis, Tunisia</span>
+                </div>
+              </div>
+              <div class="timeline-period">
+                <span class="period-badge">Aug – Nov 2024</span>
+                <span class="timeline-type">Full-time</span>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Enhanced <strong>Hypha Wallet</strong>, a blockchain-based DAO tool, adding management, voting, and proposal creation features. Successfully deployed on Play Store and App Store.
+            </p>
+            <div class="timeline-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">GraphQL</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">BLoC</span>
+              <span class="tech-tag">Blockchain</span>
+              <span class="tech-tag">GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Mobile Developer Intern</h3>
+                <div class="timeline-company">
+                  <a href="https://www.think-it.io/" target="_blank" rel="noopener" class="company-name">Think-it</a>
+                  <span class="timeline-location"><i class="fas fa-map-marker-alt"></i> Tunis, Tunisia</span>
+                </div>
+              </div>
+              <div class="timeline-period">
+                <span class="period-badge">Feb – Aug 2024</span>
+                <span class="timeline-type">Internship</span>
+              </div>
+            </div>
+            <p class="timeline-desc">
+              Developed <strong>Swarm</strong>, an internal mobile app for Think-it employees to improve team engagement and simplify office management.
+            </p>
+            <div class="timeline-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Provider</span>
+              <span class="tech-tag">Mapbox</span>
+              <span class="tech-tag">Postman</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">03. Projects</span>
+        <h2 class="section-title">Featured Work</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass-card scroll-reveal">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div class="project-stores">
+              <a href="https://play.google.com/store/apps/details?id=com.c1euro.user" target="_blank" rel="noopener" class="store-badge"><i class="fab fa-google-play"></i> C1EURO</a>
+              <a href="https://play.google.com/store/apps/details?id=com.c1euro.pro" target="_blank" rel="noopener" class="store-badge"><i class="fab fa-google-play"></i> C1EURO Pro</a>
+              <a href="https://apps.apple.com/fr/app/c1euro/id6470069252" target="_blank" rel="noopener" class="store-badge"><i class="fab fa-apple"></i> C1EURO</a>
+              <a href="https://apps.apple.com/fr/app/c1euro-pro/id6470123803" target="_blank" rel="noopener" class="store-badge"><i class="fab fa-apple"></i> C1EURO Pro</a>
+            </div>
+          </div>
+          <h3 class="project-title">C1EURO Suite</h3>
+          <p class="project-context">Freelance · Sep 2024 – Present</p>
+          <p class="project-desc">
+            Developed key features for C1EURO, C1EURO Pro, and an admin application — a shopping platform suite integrating Apple Pay, Google Pay, Google Sign-In, and advanced map features.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Provider</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Stripe</span>
+            <span class="tech-tag">Apple Pay</span>
+            <span class="tech-tag">Google Pay</span>
+          </div>
+          <div class="project-footer">
+            <div class="project-glow"></div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card scroll-reveal">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <div class="project-stores">
+              <a href="https://codecanyon.net/item/nourishnow-full-android-ios-multirestaurants-food-delivery-app-flutter-37-support/45563097" target="_blank" rel="noopener" class="store-badge cc"><i class="fas fa-code"></i> CodeCanyon</a>
+            </div>
+          </div>
+          <h3 class="project-title">NourishNow</h3>
+          <p class="project-context">CodeCanyon Author · Jan – Jun 2023</p>
+          <p class="project-desc">
+            Built two Flutter applications for multi-restaurant food delivery and admin control — featuring real-time delivery tracking, user customization, secure authentication, and digital payments.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Dart</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">GetX</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Hugo</span>
+          </div>
+          <div class="project-footer">
+            <div class="project-glow"></div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-card scroll-reveal">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-wallet"></i>
+            </div>
+            <div class="project-stores">
+              <a href="https://play.google.com/store/apps/details?id=earth.hypha.wallet.hypha_wallet" target="_blank" rel="noopener" class="store-badge"><i class="fab fa-google-play"></i> Play Store</a>
+              <a href="https://apps.apple.com/tn/app/hypha-wallet/id1659926348" target="_blank" rel="noopener" class="store-badge"><i class="fab fa-apple"></i> App Store</a>
+            </div>
+          </div>
+          <h3 class="project-title">Hypha Wallet</h3>
+          <p class="project-context">Think-it · 2024</p>
+          <p class="project-desc">
+            Blockchain-based DAO tool with management, voting, and proposal creation features. Added critical governance features to an existing production app.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">GraphQL</span>
+            <span class="tech-tag">Blockchain</span>
+            <span class="tech-tag">BLoC</span>
+            <span class="tech-tag">Firebase</span>
+          </div>
+          <div class="project-footer">
+            <div class="project-glow"></div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card glass-card scroll-reveal">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="project-stores">
+              <span class="store-badge internal"><i class="fas fa-building"></i> Internal</span>
+            </div>
+          </div>
+          <h3 class="project-title">Swarm</h3>
+          <p class="project-context">Think-it · Feb – Aug 2024</p>
+          <p class="project-desc">
+            Internal mobile app for Think-it employees to improve team engagement and simplify office management, featuring real-time updates and location-based features.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Provider</span>
+            <span class="tech-tag">Mapbox</span>
+          </div>
+          <div class="project-footer">
+            <div class="project-glow"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">04. Skills</span>
+        <h2 class="section-title">Tech Stack</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group glass-card scroll-reveal">
+          <div class="skill-group-header">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Mobile</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span>Flutter</span><span>95%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Dart</span><span>92%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card scroll-reveal">
+          <div class="skill-group-header">
+            <i class="fas fa-layer-group"></i>
+            <h3>State Management</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag-badge">BLoC</span>
+            <span class="skill-tag-badge">Cubit</span>
+            <span class="skill-tag-badge">Provider</span>
+            <span class="skill-tag-badge">GetX</span>
+            <span class="skill-tag-badge">MVVM</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card scroll-reveal">
+          <div class="skill-group-header">
+            <i class="fas fa-cloud"></i>
+            <h3>Backend & Cloud</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span>Firebase</span><span>88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Node.js</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>GraphQL</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card scroll-reveal">
+          <div class="skill-group-header">
+            <i class="fas fa-code"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag-badge">Java</span>
+            <span class="skill-tag-badge">C</span>
+            <span class="skill-tag-badge">C++</span>
+            <span class="skill-tag-badge">Python</span>
+            <span class="skill-tag-badge">TypeScript</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card scroll-reveal">
+          <div class="skill-group-header">
+            <i class="fas fa-tools"></i>
+            <h3>Tools & DevOps</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag-badge">Git</span>
+            <span class="skill-tag-badge">Jenkins</span>
+            <span class="skill-tag-badge">Jira</span>
+            <span class="skill-tag-badge">Postman</span>
+            <span class="skill-tag-badge">GitHub Actions</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card scroll-reveal">
+          <div class="skill-group-header">
+            <i class="fas fa-credit-card"></i>
+            <h3>Payments</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag-badge">Stripe</span>
+            <span class="skill-tag-badge">Apple Pay</span>
+            <span class="skill-tag-badge">Google Pay</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education" class="section education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">05. Education</span>
+        <h2 class="section-title">Academic Background</h2>
+      </div>
+      <div class="education-card glass-card scroll-reveal">
+        <div class="edu-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="edu-content">
+          <h3 class="edu-degree">Software Engineering Degree</h3>
+          <div class="edu-school">
+            <span class="school-name">INSAT — Institut National des Sciences Appliquées et de Technologie</span>
+            <span class="edu-location"><i class="fas fa-map-marker-alt"></i> Tunis, Tunisia</span>
+          </div>
+          <span class="edu-period">Sep 2019 – Sep 2024</span>
+          <p class="edu-desc">
+            5-year intensive engineering program covering software engineering fundamentals, algorithms, system design, networking, and applied computer science. Graduated with a specialization in software development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">06. Contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info scroll-reveal">
+          <p class="contact-lead">
+            I'm currently open to new opportunities. Whether you have a project, a question, or just want to connect — my inbox is always open.
+          </p>
+          <div class="contact-methods">
+            <a href="mailto:nbetsaif@gmail.com" class="contact-method">
+              <div class="contact-method-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div class="contact-method-label">Email</div>
+                <div class="contact-method-value">nbetsaif@gmail.com</div>
+              </div>
+            </a>
+            <a href="tel:+21625250161" class="contact-method">
+              <div class="contact-method-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <div class="contact-method-label">Phone</div>
+                <div class="contact-method-value">+216 25 250 161</div>
+              </div>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" class="contact-method">
+              <div class="contact-method-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <div class="contact-method-label">LinkedIn</div>
+                <div class="contact-method-value">linkedin.com/in/saif-nbet</div>
+              </div>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener" class="contact-method">
+              <div class="contact-method-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <div class="contact-method-label">GitHub</div>
+                <div class="contact-method-value">github.com/saifnbet</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper scroll-reveal">
+          <form class="contact-form glass-card" id="contact-form" action="mailto:nbetsaif@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">SN<span class="dot">.</span></div>
+        <p class="footer-text">Designed & Built by <strong>Saif Nbet</strong></p>
+        <div class="footer-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:nbetsaif@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="footer-copy">© 2025 Saif Nbet. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
